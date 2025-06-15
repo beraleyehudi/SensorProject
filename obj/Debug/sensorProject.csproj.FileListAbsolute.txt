@@ -1,0 +1,7 @@
+C:\Users\User\Desktop\sensorProject\bin\Debug\sensorProject.exe.config
+C:\Users\User\Desktop\sensorProject\bin\Debug\sensorProject.exe
+C:\Users\User\Desktop\sensorProject\bin\Debug\sensorProject.pdb
+C:\Users\User\Desktop\sensorProject\obj\Debug\sensorProject.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\sensorProject\obj\Debug\sensorProject.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\sensorProject\obj\Debug\sensorProject.exe
+C:\Users\User\Desktop\sensorProject\obj\Debug\sensorProject.pdb
