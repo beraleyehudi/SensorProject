@@ -19,6 +19,7 @@ namespace sensorProject
 
 
             Agent agent = new BacikAgent("berale");
+            
             Logic.Manage();
 
         }

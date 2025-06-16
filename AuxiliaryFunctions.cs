@@ -93,6 +93,14 @@ namespace sensorProject
             return options[choice - 1];
         }
 
+        public static void PrintDictionary(Dictionary<SensorType, int> dict)
+        {
+            foreach (KeyValuePair<SensorType, int> kvp in dict)
+            {
+                Console.WriteLine($"{kvp.Key} : {kvp.Value}");
+            }
+        }
+
 
     }
 }

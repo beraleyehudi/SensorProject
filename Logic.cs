@@ -17,6 +17,7 @@ namespace sensorProject
 
                 while (!agent.IsExposed())
                 {
+                    AuxiliaryFunctions.PrintDictionary(agent.RequiredSensors); // for debug
                     SensorType sensor = Prints.AttachingSensor();
                     int index = Prints.SelectIndex(agent.NumberOfSensors);
                     agent.AttachSensor(sensor, index);

@@ -9,7 +9,7 @@ namespace sensorProject
 {
     abstract class Sensor
     {
-        public static SensorType[] Sensortypes = new SensorType[] { SensorType.basic, SensorType.audio, SensorType.pulse, SensorType.motion, SensorType.magnetic, SensorType.light };
+        public static SensorType[] Sensortypes = new SensorType[] { SensorType.basic, SensorType.audio, SensorType.thermal, SensorType.pulse, SensorType.motion, SensorType.magnetic, SensorType.signal, SensorType.light };
         public int GeneralId = 0; 
 
         public SensorType Type;

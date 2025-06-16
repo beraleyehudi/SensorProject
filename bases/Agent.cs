@@ -23,7 +23,8 @@ namespace sensorProject
         {
             Id = GeneralId++;
             this.Name = name;
-            RequiredSensors = AuxiliaryFunctions.CreateDictOfSensore(numberOfSensors);
+            //RequiredSensors = AuxiliaryFunctions.CreateDictOfSensore(numberOfSensors);
+            RequiredSensors = new Dictionary<SensorType, int>() { { SensorType.signal, 2 } };
             AttachedSensorsFromUser = new SensorType?[numberOfSensors]; 
             AgentData.agents.Add(this);
 
@@ -36,17 +37,14 @@ namespace sensorProject
             for (int i = 0; i < AttachedSensorsFromUser.Length; i++)
             {
                 SensorType? sensorType = AttachedSensorsFromUser[i];
-                Console.WriteLine(AttachedSensorsFromUser[i]);
-                if (sensorType == null)
+                if (sensorType != null)
                 {
-                    
-                    break;
+                    if (!AttachedSensors.ContainsKey(sensorType.Value))
+                    {
+                        AttachedSensors.Add(sensorType.Value, 0);
+                    }
+                    AttachedSensors[sensorType.Value]++;
                 }
-                if (!AttachedSensors.ContainsKey(sensorType.Value))
-                {
-                    AttachedSensors.Add(sensorType.Value, 0);
-                }
-                AttachedSensors[sensorType.Value]++;
             }
             //ExposureScore();
         }
@@ -55,9 +53,9 @@ namespace sensorProject
             int exposureScore = 0;
             foreach (KeyValuePair<SensorType, int> kvp in RequiredSensors)
             { 
-                if (AttachedSensors.ContainsKey(kvp.Key) && kvp.Value == AttachedSensors[kvp.Key])
+                if (AttachedSensors.ContainsKey(kvp.Key))
                 {
-                    exposureScore++;
+                    exposureScore += AttachedSensors[kvp.Key];
                 }
             }
             NumberOfSensorsThathit = exposureScore; 
