@@ -46,11 +46,15 @@
     <Compile Include="AuxiliaryFunctions.cs" />
     <Compile Include="bases\Agent.cs" />
     <Compile Include="bases\Sensor.cs" />
+    <Compile Include="Data\AgentData.cs" />
     <Compile Include="Entities\BacikAgent.cs" />
-    <Compile Include="Entities\Sensor.cs" />
+    <Compile Include="Entities\BacikSensor.cs" />
     <Compile Include="Enums\SensorType.cs" />
+    <Compile Include="Logic.cs" />
+    <Compile Include="Prints.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestsAndChecks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

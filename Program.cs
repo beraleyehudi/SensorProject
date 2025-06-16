@@ -12,16 +12,20 @@ namespace sensorProject
     {
         static void Main(string[] args)
         {
+            //SensorType?[] agents = new SensorType?[15];
+            //Console.WriteLine(agents.Length);
+            //Console.WriteLine(agents[14] == null);
+
+
+
             Agent agent = new BacikAgent("berale");
-            Console.WriteLine(agent.Id);
-            Console.WriteLine(agent.RequiredSensors.Length);
-            
-            foreach (SensorType sensor in agent.RequiredSensors)
-            {
-                Console.WriteLine(sensor);
-            }
-           
-            
+            Logic.Manage();
+
         }
     }
 }
+
+
+
+
+

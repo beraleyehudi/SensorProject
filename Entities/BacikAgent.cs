@@ -14,7 +14,7 @@ namespace sensorProject
             Name = name;
         }
         
-
-
     }
 }
+
+

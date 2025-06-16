@@ -13,28 +13,23 @@ namespace sensorProject
         public int GeneralId = 0; 
 
         public SensorType Type;
-
-
         public int Id { get; set; } = 0;
-
         public Sensor()
         {
-            GeneralId++;
-            Id = GeneralId;
+           Id = GeneralId++;
         }
-
         protected abstract void Active();
-        
-           
-        
-
 
     }
 
+}
    
 
 
 
     
 
-}
+        
+           
+        
+
